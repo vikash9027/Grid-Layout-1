@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <style>
+body{
+    background-color: rgb(98, 71, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+     .container{
+       margin: 100px;
+       width: 90%;
+       background-color: white;
+       display: grid;
+       grid-template-rows:  60px 100px 100px;
+       grid-template-columns:repeat(4 ,1fr);
+       align-items: stretch;
+       justify-items:stretch ;
+       gap: 10px;
+     }
+     .items{
+        display: grid;
+       font-size: 20px;
+       place-items: center;
+     }
+     .item1{
+        background-color: aqua;
+        grid-row-start: 1;
+        grid-row-end: 4;
+     }
+     .item2{
+        background-color: aquamarine;
+        grid-column-start:2 ;
+        grid-column-end: 4;
+     }
+     .item3{
+        background-color: blueviolet;
+     }
+     .item4{
+        background-color: brown;
+     }
+     .item5{
+        background-color: cadetblue;
+     }
+     .item6{
+        background-color: beige;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 4;
+     }
+     .item7{
+      background-color: rgb(101, 94, 107);
+
+     }
+     .item8{
+      background-color: chocolate;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">item-1</div>
+        <div class="items item2">item-2</div>
+        <div class="items item3">item-3</div>
+        <div class="items item4">item-4</div>
+        <div class="items item5">item-5</div>
+        <div class="items item6">item-6</div>
+        <div class="items item7">item-7</div>
+        <div class="items item8">item-8</div>
+    </div>
+</body>
+</html>
